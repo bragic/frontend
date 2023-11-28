@@ -22,7 +22,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name "StaticSiteHostingProject" --name "staticsiteamc" --resource-group "StorageGroup1"
+           az cdn endpoint purge --content-paths  "/*" --profile-name "StaticSiteStorage" --name "staticsiteamc" --resource-group "StorageGroup1"
   # Azure logout
     - name: logout
       run: |
