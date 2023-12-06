@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', (event) =>{
 })
 
 const productionApiUrl = 'https://bg-http-trigger.azurewebsites.net/api/HttpTrigger1?';
-const localApiUrl = 'http://localhost:7071/api/HttpTrigger1';
+const localApiUrl = 'http://localhost:7071/api/GetVisitorCounter';
 
 const getVisitCount = () => {
     let count = 30;
