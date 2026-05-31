@@ -3,18 +3,16 @@ window.addEventListener('DOMContentLoaded', (event) =>{
 })
 
 const productionApiUrl = 'https://bg-http-trigger.azurewebsites.net/api/HttpTrigger1?';
-const localApiUrl = 'http://localhost:7071/api/GetVisitorCounter';
 
 const getVisitCount = () => {
     let count = 30;
     fetch(productionApiUrl).then(response => {
         return response.json()
     }).then(response =>{
-        console.log("Website called function API.");
-        count =  response;
+        count = response;
         document.getElementById("counter").innerText = count;
     }).catch(function(error){
-        console.log(error);
+        console.error("Failed to fetch visit count:", error);
     });
     return count;
 }
