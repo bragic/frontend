@@ -6,11 +6,11 @@
    <!--- Basic Page Needs
    ================================================== -->
    <meta charset="utf-8">
-   <title>Brad Gravesen – Cloud &amp; Infrastructure Engineer</title>
-   <meta name="description" content="Brad Gravesen's resume – Production Service Engineer at Blackbaud and aspiring cloud engineer with 20+ years in IT infrastructure and Azure certifications.">
+   <title>Brad Gravesen – Cloud Infrastructure Engineer</title>
+   <meta name="description" content="Brad Gravesen – Cloud Infrastructure Engineer specializing in Azure and Terraform. Building production-grade IaC, automating infrastructure operations, and leveraging AI tooling.">
    <meta name="author" content="Brad Gravesen">
-   <meta property="og:title" content="Brad Gravesen – Cloud &amp; Infrastructure Engineer">
-   <meta property="og:description" content="Production Service Engineer at Blackbaud, working toward cloud engineering with Azure certifications.">
+   <meta property="og:title" content="Brad Gravesen – Cloud Infrastructure Engineer">
+   <meta property="og:description" content="Cloud Infrastructure Engineer specializing in Azure and Terraform with 20+ years in IT infrastructure.">
    <meta property="og:image" content="images/me.png">
    <meta property="og:type" content="website">
 
@@ -31,7 +31,7 @@
    <script src="main.js" defer></script>
 
    <!-- Favicons
-	================================================== -->
+   ================================================== -->
    <link rel="shortcut icon" href="favicon.png">
 
 </head>
@@ -58,8 +58,8 @@
       <div class="row banner">
          <div class="banner-text">
             <h1 class="responsive-headline">Hi, I'm Brad</h1>
-
-            <p>and this page has been viewed <a id="counter"></a> times </p>
+            <h3>Cloud Infrastructure Engineer specializing in Azure and Terraform. I build production-grade infrastructure using IaC, automate with PowerShell, and leverage AI tooling to move fast without cutting corners.</h3>
+            <p>and this page has been viewed <a id="counter"></a> times</p>
             <ul class="social">
                <li><a href="https://linkedin.com/in/bgravesen" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa fa-linkedin"></i></a></li>
                <li><a href="https://github.com/bragic/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fa fa-github"></i></a></li>
@@ -81,19 +81,16 @@
       <div class="row">
 
          <div class="three columns">
-
             <img class="profile-pic" src="images/me.png" alt="Brad Gravesen" />
-
          </div>
 
          <div class="nine columns main-col">
 
             <h2>ABOUT ME</h2>
 
-            <p>Hi, I'm Brad Gravesen, <span>a Production Service Engineer at <a href="https://blackbaud.com" target="_blank" rel="noopener noreferrer">Blackbaud</a></span> and an aspiring cloud engineer working toward improving my skills.</p>
+            <p>I'm Brad Gravesen, a Cloud Infrastructure Engineer with 20+ years in IT infrastructure and the last few years focused specifically on Azure and Terraform. I build reusable IaC modules, automate infrastructure operations with PowerShell, and use AI tooling as a daily part of how I work.</p>
 
-            <p>I built this page as part of the <a href="https://cloudresumechallenge.dev/docs/the-challenge/azure/" target="_blank" rel="noopener noreferrer">Azure Cloud Resume Challenge.</a></p>
-
+            <p>I'm currently a Senior Production Service Engineer at <a href="https://blackbaud.com" target="_blank" rel="noopener noreferrer">Blackbaud</a>, where I've led Azure infrastructure projects including multi-subscription Terraform deployments, Zscaler egress implementation, and large-scale Terraform import work. Outside of work I'm building a portfolio of reusable Azure Terraform modules on GitHub and working toward the HashiCorp Terraform Associate certification.</p>
 
          </div> <!-- end .main-col -->
 
@@ -106,7 +103,7 @@
    ================================================== -->
    <section id="resume">
 
-      <!-- Education
+      <!-- Certifications
       ----------------------------------------------- -->
       <div class="row education">
 
@@ -117,30 +114,22 @@
          <div class="nine columns main-col">
 
             <div class="row item">
-
                <div class="twelve columns">
-
-                  <h3>Azure Fundamentals - AZ900</h3>
+                  <h3>Azure Fundamentals - AZ-900</h3>
                   <p class="info"><em class="date">October 2023</em></p>
-
                </div>
+            </div>
 
+            <div class="row item">
                <div class="twelve columns">
-
-                  <h3>Azure Administrator - AZ104</h3>
+                  <h3>Azure Administrator Associate - AZ-104</h3>
                   <p class="info"><em class="date">May 2025</em></p>
-
                </div>
+            </div>
 
-            </div> <!-- item end -->
+         </div> <!-- main-col end -->
 
-
-
-         </div> <!-- item end -->
-
-      </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
+      </div> <!-- End Certifications -->
 
 
       <!-- Work
@@ -153,211 +142,59 @@
 
          <div class="nine columns main-col">
 
+            <!-- Blackbaud -->
             <div class="row item">
-
                <div class="twelve columns">
 
                   <h3>Blackbaud</h3>
+                  <p class="info">Senior Production Service Engineer <span>&bull;</span> <em class="date">April 2022 - Present</em></p>
 
+                  <p><strong>Zscaler Egress Implementation</strong><br>
+                  Led the Azure-side implementation of a Zscaler deployment across 4 subscriptions, owning the Terraform environment setup, Azure Firewall DNAT configuration, routing and NSG updates, and cutover execution. Worked across 400+ VMs and 250+ storage accounts to route all outbound traffic through a single secure egress path.</p>
+
+                  <p><strong>Terraform Import and State Management</strong><br>
+                  Migrated 2 Azure subscriptions to full Terraform management, importing 90+ resources including VMs, MySQL, storage, NSGs, and Key Vault. Achieved a zero-change plan after import, validating complete configuration parity with existing infrastructure.</p>
+
+                  <p><strong>Reusable Compute Module</strong><br>
+                  Built a portable Terraform compute module using a for-each key-based pattern with tfvars-driven VM configuration per region, backed by Azure DevOps pipelines. The module was adopted by the enterprise architecture team for use in their own environments.</p>
+
+                  <p><strong>Additional contributions:</strong></p>
                   <ul>
-                     <li><strong>Role:</strong> Production Service Engineer - April 2022 - Present</li>
-                     <li><strong>Responsibilities:</strong>
-                        <ul>
-                           <li>Manage VMware and UCS infrastructure across multiple data centers.</li>
-                           <li>Collaborate with a team of engineers to upgrade, update, and optimize virtual
-                              infrastructure and compute hardware.</li>
-                           <li>Upgrade UCS servers and infrastructure with the engineering team.</li>
-                           <li>Keep the virtualization platform up to date and running optimally for staff, developers,
-                              and users.</li>
-                           <li>Assist in managing Active Directory infrastructure and Windows clustering services.</li>
-                           <li>Help with security remediation through audit cycles.</li>
-                           <li>Automate tasks in the core data center and Active Directory using PowerShell scripting.
-                           </li>
-                           <li>Serve as an additional scrum master to manage the intake and tracking of work using Azure
-                              DevOps.</li>
-                           <li>Regularly facilitate standups, retrospectives, and other scrum ceremonies within the
-                              team.</li>
-                        </ul>
-                     </li>
+                     <li>Mentored team on Terraform and GitOps practices including pull request standards, code reviews, and pipeline implementation</li>
+                     <li>Automated security and optimization tasks using PowerShell across datacenter and Azure environments</li>
+                     <li>Served in on-call rotation for incident response across hybrid infrastructure</li>
                   </ul>
 
-
                </div>
-
             </div> <!-- item end -->
 
+            <!-- Yakima Valley College Senior -->
             <div class="row item">
-
                <div class="twelve columns">
 
                   <h3>Yakima Valley College</h3>
-                  <ul>
-                     <li><strong>Role:</strong> Senior System Administrator - November 2019 - March 2022</li>
-                     <li><strong>Responsibilities:</strong>
-                        <ul>
-                           <li>Technical design, planning, implementation, performance tuning, and recovery procedures
-                              for all college servers and network systems.</li>
-                           <li>Utilized technical expertise in designing, upgrading, and troubleshooting complex systems
-                              and networks.</li>
-                           <li>Management, implementation, and supervision of configuration and installation of
-                              operating systems, services, and applications.</li>
-                        </ul>
-                     </li>
-                     <li><strong>Environment Overview:</strong>
-                        <ul>
-                           <li>Managed around 70+ virtual production servers with a DR site.</li>
-                           <li>Oversaw 700+ virtual desktops on a VDI cluster of ESXi servers.</li>
-                           <li>Supported 700+ staff and faculty, and 4000+ students online and remotely.</li>
-                        </ul>
-                     </li>
-                     <li><strong>Cyber Security and IT Operations:</strong>
-                        <ul>
-                           <li>Collaborated with the Cyber Security Engineer to implement changes for security
-                              compliance.</li>
-                           <li>Worked on the deployment of a Graylog cloud instance using on-premise data collectors and
-                              Logstash for data cleanup.</li>
-                           <li>Deployed Defender Endpoint to clients using Intune and SCCM for enhanced security.</li>
-                           <li>Implemented CheckMK for full hardware and software performance monitoring and alerting.
-                           </li>
-                           <li>Enabled improved remote access by building an Always-On VPN connection using Windows
-                              RRAS.</li>
-                           <li>Initiated the deployment of Intune and set up the Autopilot service to increase
-                              turnaround time for student loaned laptops and new staff systems.</li>
-                        </ul>
-                     </li>
-                  </ul>
+                  <p class="info">Senior System Administrator <span>&bull;</span> <em class="date">August 2003 - February 2016, November 2019 - April 2022</em></p>
 
+                  <p>Managed Azure tenant and Microsoft 365 infrastructure for 5,000+ users including Entra ID, conditional access policies, MFA enforcement, and hybrid identity. Automated operations using PowerShell across user provisioning, compliance reporting, and configuration management. Led network segmentation, server consolidation, and migration of on-premises workloads to cloud services.</p>
 
                </div>
-
             </div> <!-- item end -->
 
+            <!-- Allan Bros -->
             <div class="row item">
-
                <div class="twelve columns">
 
-                  <h3>Allan Bros, Inc</h3>
-                  <ul>
-                     <li><strong>Role:</strong> IT Manager - April 2017 - November 2019</li>
-                     <li><strong>Responsibilities:</strong>
-                        <ul>
-                           <li>Oversaw day-to-day IT operations and ensured systems availability for warehouse and
-                              business operations.</li>
-                           <li>Managed a team of IT operations technicians and developers.</li>
-                           <li>Ensured smooth and functional access to business and packing line systems and data.</li>
-                           <li>Led projects to successful completion.</li>
-                           <li>Collaborated with groups like shipping, production, and field operations to meet their IT
-                              needs.</li>
-                        </ul>
-                     </li>
-                     <li><strong>Major Project: Implementation of IT Ticketing System:</strong>
-                        <ul>
-                           <li>Implemented a new IT ticketing system using ServiceDesk Plus.</li>
-                           <li>Previous ticket system was limited and accessible only to internal staff.</li>
-                           <li>ServiceDesk Plus enabled the rollout of a mobile-friendly product, allowing all company
-                              staff (regardless of location) to access support and request IT services.</li>
-                        </ul>
-                     </li>
-                  </ul>
+                  <h3>Allan Bros Fruit</h3>
+                  <p class="info">IT Manager <span>&bull;</span> <em class="date">February 2016 - November 2019</em></p>
+
+                  <p>Led IT operations across multiple sites including farms, warehouses, and packing facilities. Delivered hybrid cloud integration including Entra ID deployment, directory synchronization, MFA rollout, and Microsoft 365 migration. Designed redundant VMware infrastructure across two sites with Veeam backup and disaster recovery.</p>
 
                </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Allan Bros, Inc</h3>
-
-                  <ul>
-                     <li><strong>Role:</strong> System Administrator - March 2016 - April 2017</li>
-                     <li><strong>Responsibilities:</strong>
-                        <ul>
-                           <li>Managed IT servers and network for warehouse and packing line operations.</li>
-                           <li>Ensured uptime and availability.</li>
-                        </ul>
-                     </li>
-                     <li><strong>Major Projects:</strong>
-                        <ul>
-                           <li>Upgraded all server hardware and virtualization software.</li>
-                           <li>Installed new high-end server hardware and storage.</li>
-                           <li>Achieved a 100% improvement in performance.</li>
-                           <li>Implemented a fully replicated DR site.</li>
-                           <li>Deployed failover and backup services using Veeam Backup and Replication.</li>
-                        </ul>
-                     </li>
-                     <li><strong>Security Responsibilities:</strong>
-                        <ul>
-                           <li>Implemented security awareness and training.</li>
-                           <li>Utilized KnowBe4 phishing testing and training software.</li>
-                        </ul>
-                     </li>
-                  </ul>
-
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Yakima Valley College</h3>
-                  <ul>
-                     <li><strong>Role:</strong> System Administrator - August 2003 - February 2016 </li>
-                     <li><strong>Background:</strong> Starting as the System Administrator, took over 20 old and
-                        neglected physical servers running Windows NT 4.</li>
-                     <li><strong>Major Upgrades:</strong>
-                        <ul>
-                           <li>Upgraded aging Windows NT domain to Windows Server 2003 and Active Directory.</li>
-                           <li>Managed and migrated legacy Exchange 5.5 to 2000 and then into the cloud.</li>
-                           <li>Implemented VMware vCenter, ESX, and Horizon VDI.</li>
-                           <li>Implemented SharePoint server farm environment for college web services and sites.</li>
-                        </ul>
-                     </li>
-                     <li><strong>Virtualization Transition:</strong>
-                        <ul>
-                           <li>Consolidated 20 physical servers, minimizing physical footprint to 3 VMware servers.</li>
-                           <li>Lead efforts to grow virtualization into a major component of the college IT operations.
-                           </li>
-                           <li>Managed over 100 virtual servers consisting of Microsoft enterprise applications, third-party web services, and data systems.</li>
-                        </ul>
-                     </li>
-                     <li><strong>Automation Implementation:</strong>
-                        <ul>
-                           <li>Implemented SCCM (System Center Configuration Manager) to automate changes, deploy
-                              software, and image operating systems.</li>
-                        </ul>
-                     </li>
-                     <li><strong>VDI Implementation:</strong>
-                        <ul>
-                           <li>Designed and implemented VDI environment using VMware Horizon View.</li>
-                        </ul>
-                     </li>
-                     <li><strong>Hybrid Connectivity:</strong>
-                        <ul>
-                           <li>Laid the groundwork for hybrid on-premises and cloud connectivity and authentication
-                              using ADFS.</li>
-                           <li>Migrated email from on-premises Exchange to Exchange Online.</li>
-                        </ul>
-                     </li>
-                  </ul>
-
-
-
-
-               </div>
-
             </div> <!-- item end -->
 
          </div> <!-- main-col end -->
 
       </div> <!-- End Work -->
-
-
-
 
    </section> <!-- Resume Section End-->
 
@@ -376,8 +213,7 @@
             </ul>
 
             <ul class="copyright">
-               <a href="https://www.styleshout.com/free-templates/ceevee/"> Template by CeeVee </a>
-
+               <a href="https://www.styleshout.com/free-templates/ceevee/">Template by CeeVee</a>
             </ul>
 
          </div>
